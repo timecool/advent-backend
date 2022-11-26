@@ -56,7 +56,7 @@ public class AuthController {
     public List<Challenge> getAllChallenges() throws ParseException {
         Date start = new SimpleDateFormat("yyyy-MM-dd").parse("2022-11-01");
         // Date end = new Date();
-        Date end = new SimpleDateFormat("yyyy-MM-dd").parse("2022-12-12");
+        Date end = new SimpleDateFormat("yyyy-MM-dd").parse("2022-12-23");
         return challengeRepository.findByDayBetween(start,end);
     }
 
