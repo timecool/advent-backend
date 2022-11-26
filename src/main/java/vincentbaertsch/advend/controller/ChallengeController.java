@@ -43,7 +43,7 @@ public class ChallengeController {
        if(challengeOptional.isPresent() && userEntityOptional.isPresent()){
            Challenge currentChallenge= challengeOptional.get();
            String fileName = StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename()));
-           String uploadDir = "./challenges/"+currentChallenge.getId()+"/" + userName;
+           String uploadDir = "./challenges/"+currentChallenge.getDay()+"/" + userName;
 
            FileUploadUtil.saveFile(uploadDir, fileName, file);
 
