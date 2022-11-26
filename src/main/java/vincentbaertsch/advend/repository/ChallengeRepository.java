@@ -8,6 +8,6 @@ import java.util.List;
 
 
 public interface ChallengeRepository extends JpaRepository<Challenge, Long> {
-    List<Challenge> findByDayBetween(Date start, Date end);
+    List<Challenge> findByDayLessThanEqual(Date end);
     boolean existsByDay(Date day);
 }
