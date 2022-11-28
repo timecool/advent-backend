@@ -1,0 +1,29 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 1000MB
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  datasource:
+    #password: postgres
+    #url: jdbc:postgresql://localhost:5432/advend
+    #username: postgres
+    url: jdbc:postgresql://ec2-34-247-172-149.eu-west-1.compute.amazonaws.com:5432/dcnh5qv64k274m
+    username: krtdmlbdkboemx
+    password: 318b8516a3d6e651aa85944d25fdaccb4207d8520645ef9607943a51fc33c561
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+file:
+  upload-dir: ./challenges/
