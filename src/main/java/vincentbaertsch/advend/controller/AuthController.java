@@ -55,8 +55,8 @@ public class AuthController {
 
     @GetMapping("challenges")
     public List<Challenge> getAllChallenges() throws ParseException {
-        // Date now = new Date();
-        Date now = new SimpleDateFormat("yyyy-MM-dd").parse("2022-12-24");
+        Date now = new Date();
+        //Date now = new SimpleDateFormat("yyyy-MM-dd").parse("2022-12-24");
         return challengeRepository.findByDayLessThanEqual(now);
     }
 

@@ -12,7 +12,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 @RestController
-@RequestMapping("uploads/image")
+@RequestMapping("/api/admin/uploads/image")
 public class ImageController {
 
     @GetMapping(value = "/{challenge}/{user}/{filename}")

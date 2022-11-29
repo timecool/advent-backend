@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 @RestController
-@RequestMapping("/uploads/videos")
+@RequestMapping("/api/admin/uploads/videos")
 public class VideoController {
     @GetMapping(value = "/{challenge}/{user}/{filename}", produces = "video/mp4")
     public ResponseEntity<ByteArrayResource> image(@PathVariable("challenge") long challenge, @PathVariable("user") String user, @PathVariable("filename") String filename) throws IOException {
