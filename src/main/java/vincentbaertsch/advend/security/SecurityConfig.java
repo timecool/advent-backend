@@ -35,7 +35,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors().configurationSource(request-> {
                     CorsConfiguration configuration = new CorsConfiguration();
-                    configuration.setAllowedOrigins(Arrays.asList("https://advent-fontend.herokuapp.com/","http://localhost:3000"));
+                    configuration.setAllowedOrigins(Arrays.asList("http://49.12.191.163:3000/","http://localhost:3000"));
                     //configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
                     configuration.setAllowedMethods(Arrays.asList("GET","POST"));
                     configuration.setAllowedHeaders(Arrays.asList("*"));
