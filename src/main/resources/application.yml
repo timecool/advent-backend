@@ -14,9 +14,9 @@ spring:
     #password: postgres
     #url: jdbc:postgresql://localhost:5432/advend
     #username: postgres
-    url: jdbc:postgresql://ec2-52-30-67-143.eu-west-1.compute.amazonaws.com:5432/d6bt4sd5ojl5gt
-    username: ofivrsfmqhsrkl
-    password: 79fe40c85a3c24cd455e257e124f9232c6509243f23d588a438f5557c3015059
+    url: jdbc:postgresql://ec2-54-194-180-51.eu-west-1.compute.amazonaws.com:5432/d6l6tl0bkouilq
+    username: d6l6tl0bkouilq
+    password: f79918f8202dec202b59b609c1814706bcd5aa20f42e5278a605bb3ca39680a9
   jpa:
     hibernate:
       ddl-auto: update
